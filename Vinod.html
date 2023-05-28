@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<style>
+    .wNumber{
+        font-size: 3rem;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Enter Number</h1>
+        <form>
+            <div class="form-group">
+                <input type="number" class="form-control" id="searchInput" placeholder="Mobile Number">
+            </div>
+            <button class="btn btn-primary mt-2">Get Link</button>
+        </form>
+        <div class="input-message mt-5">
+            <!-- Results will be dynamically populated here -->
+        </div>
+    </div>
+    
+    <a href="" target="_blank"></a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // Function to handle input changes
+            $('.btn').on('click', function (e) {
+                console.log("btn cls");
+                e.preventDefault();
+
+
+                var inputValue = $("#searchInput").val(); // Get the current input value
+
+                // Display the input value below the input field
+                var inputMessage = $('.input-message');
+                inputMessage.html(`<a href="https://wa.me/+91${inputValue}" target="_blank" class="wNumber">${inputValue}</a>`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+<!--
+
+    *आग्रहाचे निमंत्रण*
+वाट नवी, स्वप्न नवे, स्वप्नाला साथ मिळेल प्रेमाची, जिवनाच्या वाटेवरती साथ मिळेल सुख दुःखाची,
+अखंड राहो ऋणानुबंध यांच्या संसारासाठी गरज आहे आपल्या आशीर्वादाची, हिच देवाच्या चरणी प्रार्थना आहे *गवळी आणि मेरुकर* परिवाराची.
+आमचे येथे श्री संताजी  कृपेने हे मंगल कार्य करण्याचे योजिले आहे. तरी वधू वरास शुभाशिर्वाद देण्यास येण्याचे करावे
+
+
+    9870458740
+    988142538
+    9850176964
+   9420031388  
+    8623022860
+    9921215414
+    8788579930
+    9022883986
+ -->
